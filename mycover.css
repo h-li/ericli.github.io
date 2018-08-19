@@ -31,7 +31,7 @@ p {
 }
 
 #main #top-data-card-img {
-	background-image: url(image/cover.jpg);
+	background-image: url(image/cover_optimised.png);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	filter: blur(1px);
@@ -60,7 +60,7 @@ p {
 }
 
 #main #top-data-card-infobg #profile-img{
-	background-image: url(image/me/3.jpg);
+	background-image: url(image/me/3_optimised.png);
 	background-size: cover;
 	width: 110px;height: 110px;
 	margin-top: 50px;
