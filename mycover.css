@@ -10,7 +10,7 @@ a,a:visited {
 
 #main {
 	width: 100%;
-	height: 2000px;
+	height: 3000px;
 	position: absolute;
 	top: 0;left: 0;
 	margin-bottom: 150px;
@@ -231,15 +231,17 @@ a,a:visited {
 }
 
 .single {
-	width: 20%;
+	width: 260px;
 	height: 400px;
 	position: relative;
 	margin: 2%;
 	float: left;
-	margin-top: 20px;
+	margin-top: 50px;
 justify-content: center;
 	display: flex;
+/*
 	border:solid white;
+*/
 }
 
 .single img {
@@ -312,9 +314,8 @@ justify-content: center;
 	justify-content:center;
 	display:flex;
 	text-align:center;
-	font-size:22px;
+	font-size:15px;
 	font-weight:400;
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	line-height:36px;
 }
 #footer a {
