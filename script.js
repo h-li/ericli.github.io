@@ -26,17 +26,16 @@
 		},800);
 	}
 
-function playAudio() {
+function playBfsdla() {
 			document.getElementById("bfsdla").play();
+			$(".single img").attr('style','animation: 9.5s linear 0s normal none infinite rotate;');
 }
 
-	function coverRotating() {
-		$(".single img").attr('style','animation: 9.5s linear 0s normal none infinite rotate;');
-		$(".single .single-cover-playing-bg").attr('style','display:block;');
-	}
-	
-
-	function coverStopRotating() {
-		$(".single img").attr('style','animation: none 0 ease 0 1 normal none running;');
-		$(".single .single-cover-playing-bg").attr('style','display:none;');
-	}
+function showBlackBg(){
+			$(".single .single-cover-playing-bg").attr('style','display:block;');
+}
+function hideBlackBg() {
+			$(".single .single-cover-playing-bg").attr('style','display:none;');
+			$(".single img").attr('style','animation: none 0 ease 0 1 normal none running;');
+			document.getElementsByClassName("audio")[0].pause();
+}
