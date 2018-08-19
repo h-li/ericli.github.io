@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" type="text/css" href="mycover.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="./script.js"></script>
+</head>
+
+<body onLoad="playAudio()">
+	<div id="main">
+<!-- START TOP-DATA-CARD -->
+		<div id="top-data-card-img"></div>
+		<div id="top-data-card-blackbg"></div>
+		<div id="top-data-card-infobg">
+			<div id="cover-img-click" onClick="showCoverWindow()" onMouseOver="this.style.cursor='pointer'"></div>
+			<div id="cover-img-click-rightside" onClick="showCoverWindow()" onMouseOver="this.style.cursor='pointer'"></div>
+			<div id="profile-img" onClick="showWindow()" onMouseOver="this.style.cursor='pointer'"></div>
+			<div id="name">Eric Li</div>
+			<div id="follow-and-followers">Followers<span></span>220<span></span>Follow<span></span>36</div>
+		</div>		
+	
+		<div class="module" id="profile-original" data-active="off" onClick="shutDown()" onMouseOver="this.style.cursor='zoom-out'">
+			<div class="module-content">
+				<div id="profile-original-buttons">
+					<a class="profile-original-buttons" id="profile-original-img-download" href="image/me/3.JPG" download="image" target="_blank">Save photo</a>
+					<a href="" class="profile-original-buttons" id="more-about">more about it</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="module" id="cover-original" data-active="off" onClick="shutCoverDown()" onMouseOver="this.style.cursor='zoom-out'">
+			<div class="module-content">
+				<div id="profile-original-buttons">
+					<a class="profile-original-buttons" id="profile-original-img-download" href="image/me/3.JPG" download="image" target="_blank">Save photo</a>
+					<a href="" class="profile-original-buttons" id="more-about">more about it</a>
+				</div>
+			</div>
+		</div>
+<!-- END TOP-DATA-CARD -->
+		
+		
+		<div id="work-display">
+		<div class="raw">
+			<div class="single">
+				<audio id="bfsdla">
+					<source src="audio/64public-prev25s-notbreakinglove.mp3">
+				</audio>
+				<img src="http://img2.kuwo.cn/star/albumcover/240/32/88/1806712793.jpg" width="200px" height="200px" onMouseOver="playAudio()">
+				
+				<div class="single-cover-playing-bg" style="display: none;" onMouseOver="coverRotating()" onMouseOut="coverStopRotating()" ><svg t="1534640462369" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2512" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"><defs><style type="text/css"></style></defs><path d="M68.266667 341.333333l68.266667 0 0 341.333333-68.266667 0 0-341.333333Z" p-id="2513" fill="#ffffff"></path><path d="M273.066667 204.8l68.266667 0 0 614.4-68.266667 0 0-614.4Z" p-id="2514" fill="#ffffff"></path><path d="M477.866667 34.133333l68.266667 0 0 955.733333-68.266667 0 0-955.733333Z" p-id="2515" fill="#ffffff"></path><path d="M682.666667 136.533333l68.266667 0 0 750.933333-68.266667 0 0-750.933333Z" p-id="2516" fill="#ffffff"></path><path d="M887.466667 68.266667l68.266667 0 0 887.466667-68.266667 0 0-887.466667Z" p-id="2517" fill="#ffffff"></path></svg></div>
+				
+			</div>
+			<div class="single"></div>
+			<div class="single"></div>
+		</div>
+			<div class="raw">
+			<div class="single"></div>
+			<div class="single"></div>
+			<div class="single"></div>
+		</div>
+		</div>
+		
+	</div>
+	<div id="footer">test content
+	</div>
+</body>
+</html>
