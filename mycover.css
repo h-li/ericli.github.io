@@ -1,7 +1,7 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;
-	background: black;
+	background: rgb(13,206,225);
 }
 
 a,a:visited {
@@ -10,11 +10,12 @@ a,a:visited {
 
 #main {
 	width: 100%;
-	height: 3000px;
+	height: 2500px;
 	position: absolute;
 	top: 0;left: 0;
 	margin-bottom: 150px;
-	background-color: #313131;
+background:linear-gradient(to bottom right,rgb(156,190,178),rgb(13,206,225),rgb(13,185,237));
+box-shadow:0 5px 15px #666666;
 }
 
 #main #top-data-card-img,
@@ -232,16 +233,22 @@ a,a:visited {
 
 .single {
 	width: 260px;
-	height: 400px;
+	height: 480px;
 	position: relative;
-	margin: 2%;
+	margin: 2% 2% 2% 2.8%;
 	float: left;
 	margin-top: 50px;
-justify-content: center;
+	justify-content: center;
 	display: flex;
-/*
-	border:solid white;
-*/
+	padding-top:20px;
+	box-shadow:0 5px 15px #2F4F4F;
+	background:linear-gradient(to left,rgb(13,206,225),rgb(13,185,237));
+
+	}
+
+.single:hover {
+	transform:translateY(-15px);
+	transition: .5s;
 }
 
 .single img {
@@ -249,10 +256,10 @@ justify-content: center;
 }
 .single-cover-playing-bg{
 	position: absolute;
-	top: 0;
+	top: 20px;
 	background-color: black;
 	width: 200px;height: 110px;
-	opacity: .4;
+	opacity: .2;
 	border-radius: 200px;
 	padding-top: 90px;
 	text-align: center;
@@ -267,7 +274,7 @@ justify-content: center;
 	width: 200px;
 	height: fit-content;
 	position: absolute;
-	top: 215px;
+	top: 235px;
 	color: white;
 	text-align: left;
 }
@@ -307,18 +314,38 @@ justify-content: center;
 	height: 150px;
 	position: fixed;
 	bottom: 0;left: 0;
-	background-color: black;
+	background-color: rgb(13,206,225);
 	z-index: -1000;
-	color:whitesmoke;
+	color:#fff;
 	align-items:center;
 	justify-content:center;
 	display:flex;
 	text-align:center;
-	font-size:15px;
-	font-weight:400;
-	line-height:36px;
+	font-size:16px;
+	font-weight:500;
+	line-height:32px;
+	text-transform:capitalize;
 }
 #footer a {
-	color: whitesmoke;
-	text-decoration: underline;
+	border-radius:80px;
+	background:whitesmoke;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:4px;
+	padding-bottom:4px;
+	color: rgb(13,206,225);
+}
+#footer a:nth-child(1),
+#footer a:nth-child(3){
+	background:linear-gradient(to bottom right,rgb(255,117,60),rgb(252,13,54),rgb(251,0,60));
+	color:white;
+}
+#footer a:nth-child(5){
+	background:#fff;
+	color: rgb(13,206,225);
+}
+
+#footer #mywesingpage {
+	background:linear-gradient(to bottom right,rgb(255,117,60),rgb(252,13,54),rgb(251,0,60));
+	color:white;
 }

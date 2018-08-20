@@ -56,3 +56,31 @@ function hideBlackBgBzlx() {
 			document.getElementById("bzlx").pause();
 }
 
+
+
+function showBlackBgVf(){
+	$(".single #vf-bg").attr('style','display:block;');
+}
+function playVf() {
+document.getElementById("vf").play();
+$(".single #img-vf").attr('style','animation: 9.5s linear 0s normal none infinite rotate;');
+}
+function hideBlackBgVf() {
+			$(".single #vf-bg").attr('style','display:none;');
+			$(".single #img-vf").attr('style','animation: none 0 ease 0 1 normal none running;');
+			document.getElementById("vf").pause();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
