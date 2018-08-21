@@ -78,6 +78,26 @@ function hideBlackBgVf() {
 
 
 
+function showBlackBgYh(){
+	$(".single #yh-bg").attr('style','display:block;');
+}
+function playYh() {
+document.getElementById("yh").play();
+$(".single #img-yh").attr('style','animation: 9.5s linear 0s normal none infinite rotate;');
+}
+function hideBlackBgYh() {
+			$(".single #yh-bg").attr('style','display:none;');
+			$(".single #img-yh").attr('style','animation: none 0 ease 0 1 normal none running;');
+			document.getElementById("yh").pause();
+}
+
+
+
+
+
+
+
+
 
 
 
