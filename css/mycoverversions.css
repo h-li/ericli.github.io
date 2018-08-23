@@ -38,6 +38,16 @@ body {
 	font-size:14px;
 	cursor:pointer;
 }
+.mv-loading {
+	font-family: 'Luckiest Guy', cursive;
+	text-transform:uppercase;
+  background: linear-gradient(to right, #e52d27, #b31217); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color:transparent;
+	font-size:26px;
+	-webkit-background-clip:text;
+	width:fit-content;
+	letter-spacing:3px;
+}
 
 
 
@@ -213,7 +223,9 @@ body {
 #demo-4 {
 	background-image:url("http://img.mp.itc.cn/upload/20170727/5e8faf323cab448ca49d63c169661274_th.jpg");
 	}
-
+#demo-5 {
+	background-image:url("https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=bde2afcf92dda144da096bb48a8cb79f/a50f4bfbfbedab64b27a461cf236afc378311ee5.jpg");
+	}
 
 
 
@@ -225,8 +237,9 @@ body {
 .single .title {
 	text-transform:capitalize;
 	color:white;
-	font-size:22px;
-font-family: 'Luckiest Guy', cursive;
+	font-size:28px;
+	font-family: 'Luckiest Guy', cursive;
+	height:50px;
 }
 .single .wesing {
 	width:fit-content;
@@ -252,6 +265,8 @@ font-family: 'Luckiest Guy', cursive;
 	padding:4px 8px 4px 8px;
 	font-family: 'Montserrat', sans-serif;
 	font-size:13px;
+	text-transform: capitalize;
+
 }
 .single .orginal,
 .single .in-album,
@@ -280,6 +295,19 @@ font-family: 'Luckiest Guy', cursive;
 }
 .single .na {
 	display:none;
+}
+.single .badge {
+	width:fit-content;
+	position:absolute;
+	top:0;right:0;
+	padding:3px 15px 3px 15px;
+  	background: linear-gradient(to left, #ff9966, #ff5e62);
+	box-shadow:0 2px 25px #ff9966;
+	text-transform: capitalize;
+	border-radius:15px 5px 15px 5px;
+	font-size:12px;
+	font-family: 'Montserrat', sans-serif;
+
 }
 
 

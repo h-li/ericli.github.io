@@ -45,4 +45,14 @@
 		demo4.load();
 		$(".album").removeClass("album-playing");
 	}
-
+	function playDemo5() {
+		var demo5 = document.getElementById("demo5");
+		demo5.play();
+		$("#demo-5").addClass("album-playing");
+	}
+	function stopDemo5() {
+		var demo5 = document.getElementById("demo5");
+		demo5.pause();
+		demo5.load();
+		$(".album").removeClass("album-playing");
+	}
