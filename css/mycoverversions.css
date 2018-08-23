@@ -9,8 +9,9 @@ body {
 	border:none;
 	overflow-x:hidden;
 	color:white;
+	background: linear-gradient(to left, #8e2de2, #4a00e0);
 }
-#mv-container-bg-control, #mv-container {
+#mv-container-bg-control,#mv-container {
 	width:100%;height:100%;
 	position:fixed;
 	left:0;top:0;
@@ -19,8 +20,23 @@ body {
 	align-items:center;
 	justify-content:center;
 }
+
+
 .mvideo {
 	opacity:1;
+	z-index:2100;
+}
+.mv-tip {
+	position:absolute;
+	top:20%;
+	font-family: 'Montserrat', sans-serif;
+	text-transform:capitalize;
+	background: linear-gradient(to right, #f2994a, #f2c94c);
+	color:white;
+	border-radius:10000000px;
+	padding:5px 20px 5px 20px;
+	font-size:14px;
+	cursor:pointer;
 }
 
 
@@ -81,7 +97,7 @@ body {
 
 #main-height-ctrl {
 	width:100%;
-	height:2000px;
+	height:;
 	position:absolute;
 	top:299px;left:0;
 }
@@ -168,7 +184,7 @@ body {
 	border-radius:10000000000000000000px;
 	background-size:cover;
 	opacity:.8;
-	margin-bottom:10px;
+	margin-bottom:20px;
 }
 .album:hover {
 	width:200px;
@@ -188,10 +204,15 @@ body {
 #demo-1 {
 	background-image:url("http://img2.kuwo.cn/star/albumcover/240/32/88/1806712793.jpg");
 	}
-#demo-1:hover {
-	background-image:url("http://img2.kuwo.cn/star/albumcover/240/32/88/1806712793.jpg");
+#demo-2 {
+	background-image:url("https://i.kfs.io/album/tw/5445138,0v1/fit/500x500.jpg");
 	}
-
+#demo-3 {
+	background-image:url("https://images-na.ssl-images-amazon.com/images/I/51cnP9ki24L._SS500.jpg");
+	}
+#demo-4 {
+	background-image:url("http://img.mp.itc.cn/upload/20170727/5e8faf323cab448ca49d63c169661274_th.jpg");
+	}
 
 
 
@@ -204,7 +225,7 @@ body {
 .single .title {
 	text-transform:capitalize;
 	color:white;
-	font-size:28px;
+	font-size:22px;
 font-family: 'Luckiest Guy', cursive;
 }
 .single .wesing {
@@ -246,8 +267,8 @@ font-family: 'Luckiest Guy', cursive;
 	padding:4px 8px 4px 8px;
 	margin:8px 6px 0 auto;
 	border-radius:1000000000px;
-  background: linear-gradient(to right, #e44d26, #f16529); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	color:white;
+	background: white;
+	color:black;
 	font-family: 'Montserrat', sans-serif;
 	font-size:12px;
 	float:left;
@@ -255,7 +276,7 @@ font-family: 'Luckiest Guy', cursive;
 	text-decoration:none;
 }
 .single a:hover {
-	background: linear-gradient(to left, #373b44, #4286f4);
+	background: whitesmoke;
 }
 .single .na {
 	display:none;
@@ -277,14 +298,9 @@ font-family: 'Luckiest Guy', cursive;
 
 #footer {
 	width:100%;
-	height:100px;
-	position:fixed;
-	bottom:0;left:0;
-	align-items:center;
-	justify-content:center;
-	display:flex;
-	text-transform:capitalize;
-	z-index:-1000;
-	border:none;
+	display:inline-block;
+	text-align:center;
+	margin:100px auto auto auto;
+	font-family: 'Sniglet', cursive;
 
 }
