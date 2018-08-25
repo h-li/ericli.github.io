@@ -6,22 +6,23 @@
 <script src="./js/jquery_1_11_3_min.js"></script>
 <script src="./js/audiocontrols.js"></script>
 <script src="./js/linkonclick.js"></script>
+<script src="./js/randomdisplay.js"></script>
 </head>
-<body>
+<body onload="rdmDisp()">
 <div id="mv-container-bg-control">
 <div class="mv-loading">just a sec..</div>
 </div><!-- CLOSE MV CONTAINER BG CONTROL -->
 <div id="mv-container">
 
 
-<iframe class="mvideo-all" id="mvideo-demo1" style="display:none;" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-
-<iframe class="mvideo-all" id="mvideo-demo5" style="display:none;" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe id="mvideo" style="display:none;" width="84%" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="true"></iframe>
 
 
 <span class="mv-tip">Refresh if not working, or wanna go back?</span>
+
 </div><!-- CLOSE MV CONTAINER -->
+<span class="mv-tip-mainland" id="mv-tip-mainland-demo1">click anywhere blank to go back. Can't access YouTube in mainland china?</span>
+<span class="mv-tip-mainland" id="mv-tip-mainland-demo5">click anywhere blank to go back. Can't access YouTube in mainland china?</span>
 
 
 
@@ -44,7 +45,7 @@ My cover versions
 <div id="main-bg-ctrl">
 <div id="main">
 
-<div class="single">
+<div class="single" id="single1"><!-- SINGLE DEMO 1 -->
 <audio loop class="demo" id="demo1" autobuffer><source src="./audio/notbreakinglove.mp3">
 </source></audio>
 <div class="album" id="demo-1" onclick="playDemo1()" onmouseout="stopDemo1()"></div>
@@ -56,11 +57,13 @@ My cover versions
 <div class="in-album">album: good quiet</div>
 <div class="duration">demo duration: 25s approx.</div>
 <a class="save" id="save-demo1">save demo</a>
-<a class="mv" id="mv-demo1">original MV</a>
+<a class="stopdemo-ios" onclick="stopDemo1()">pause demo</a>
+<a class="mv-youtube" id="mv-youtube-demo1">YouTube MV</a>
+<a class="mv-othersource" id="mv-othersource-demo1">MV on Bilibili</a>
 <a class="ed" id="ed-demo1">complete edition</a>
 </div><!-- CLOSE SINGLE -->
 
-<div class="single">
+<div class="single" id="single2"><!-- SINGLE DEMO 2 -->
 <audio loop class="demo" id="demo2" autobuffer><source src="./audio/buzailianxi.mp3">
 </source></audio>
 <div class="album" id="demo-2" onclick="playDemo2()" onmouseout="stopDemo2()"></div>
@@ -77,7 +80,7 @@ My cover versions
 <div class="badge">electrical effect</div>
 </div><!-- CLOSE SINGLE -->
 
-<div class="single">
+<div class="single" id="single3"><!-- SINGLE DEMO 3 -->
 <audio loop class="demo" id="demo3" autobuffer><source src="./audio/valderfields.mp3">
 </source></audio>
 <div class="album" id="demo-3" onclick="playDemo3()" onmouseout="stopDemo3()"></div>
@@ -93,7 +96,7 @@ My cover versions
 <a class="ed" id="ed-demo3">complete edition</a>
 </div><!-- CLOSE SINGLE -->
 
-<div class="single">
+<div class="single" id="single4"><!-- SINGLE DEMO 4 -->
 <audio loop class="demo" id="demo4" autobuffer><source src="./audio/fireworks.mp3">
 </source></audio>
 <div class="album" id="demo-4" onclick="playDemo4()" onmouseout="stopDemo4()"></div>
@@ -109,7 +112,7 @@ My cover versions
 <a class="ed" id="ed-demo4">complete edition</a>
 </div><!-- CLOSE SINGLE -->
 
-<div class="single">
+<div class="single" id="single5"><!-- SINGLE DEMO 5 -->
 <audio loop class="demo" id="demo5" autobuffer><source src="./audio/spoiling.mp3">
 </source></audio>
 <div class="album" id="demo-5" onclick="playDemo5()" onmouseout="stopDemo5()"></div>
@@ -120,12 +123,27 @@ My cover versions
 <div class="orginal">original: TFBOYS</div>
 <div class="in-album">album: the big dreamer</div>
 <div class="duration">demo duration: 35s approx.</div>
-<a class="save" id="save-demo5" download="spoiling.mp3">save demo</a>
-<a class="mv" id="mv-demo5">original MV</a>
+<a class="save" id="save-demo5">save demo</a>
+<a class="mv" id="mv-demo5">YouTube MV</a>
+<a class="mv-othersource" id="mv-othersource-demo5">MV on Bilibili</a>
 <a class="ed" id="ed-demo5">complete edition</a>
 </div><!-- CLOSE SINGLE -->
 
-
+<div class="single" id="single6"><!-- SINGLE DEMO 6 -->
+<audio loop class="demo" id="demo6" autobuffer><source src="./audio/shanyoumuxi.mp3">
+</source></audio>
+<div class="album" id="demo-6" onclick="playDemo6()" onmouseout="stopDemo6()"></div>
+<div class="title">shan you mu xi</div>
+<div class="wesing">WeSing</div>
+<div class="listened"><span></span>199 listened</div>
+<div class="published-on">date published: -</div><p></p>
+<div class="orginal">original: ChengGuang Studio</div>
+<div class="in-album">album: -</div>
+<div class="duration">demo duration: 30s approx.</div>
+<a class="save" id="save-demo6">save demo</a>
+<a class="mv na" id="mv-demo6">original MV</a>
+<a class="ed" id="ed-demo6">complete edition</a>
+</div><!-- CLOSE SINGLE -->
 
 
 

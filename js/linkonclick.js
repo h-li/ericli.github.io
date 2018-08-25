@@ -8,11 +8,27 @@ $(document).ready(
 			.attr('style','display:none');
 			$("#mv-container")
 			.attr('style','display:none');
-			$(".mvideo-all")
+			$("#mvideo")
 			.attr('style','display:none;');
-			$(".mvideo-all")
+			$("#mvideo")
+			.attr('src','');
+			$(".mv-tip-mainland")
+			.attr('style','z-index:-3100;');
+		});
+		$("#mv-tip").on('click',function(){
+			$("#mv-container-bg-control")
+			.attr('style','display:none');
+			$("#mv-container")
+			.attr('style','display:none');
+			$("#mvideo")
+			.attr('style','display:none;');
+			$("#mvideo")
 			.attr('src','');
 		});
+
+
+
+
 
 
 
@@ -23,19 +39,39 @@ $(document).ready(
 			$form.appendTo($('body'));
 			$form.submit();
 		});
-		$("#mv-demo1").on('click',function(){
+		$("#mv-youtube-demo1").on('click',function(){
 			$("#mv-container-bg-control")
 			.attr('style','opacity:.8;background-color:black;display:flex');
 			$("#mv-container")
 			.attr('style','display:flex');
-			$("#mvideo-demo1")
+			$("#mvideo")
 			.attr('style','display:block;');
-			$("#mvideo-demo1")
-			.attr('src','https://www.youtube.com/embed/TZwL2f5RzCM');
+			$("#mvideo")
+			.attr('src','https://www.youtube.com/embed/vCeBDdctgUA');
+			$("#mv-tip-mainland-demo1")
+			.attr('style','z-index:3100;');
+			$("#mv-tip-mainland-demo5")
+			.attr('style','display:none;');
+		});
+		$("#mv-tip-mainland-demo1").on('click',function(){
+			$("#mvideo")
+			.attr('src','https://player.bilibili.com/player.html?aid=13518165&cid=22131166&page=1');
+		});
+		$("#mv-othersource-demo1").on('click',function(){
+			$("#mv-container-bg-control")
+			.attr('style','opacity:.8;background-color:black;display:flex');
+			$("#mv-container")
+			.attr('style','display:flex');
+			$("#mvideo")
+			.attr('style','display:block;');
+			$("#mvideo")
+			.attr('src','https://player.bilibili.com/player.html?aid=13518165&cid=22131166&page=1');
 		});
 		$("#ed-demo1").on('click',function(){
 		window.open("https://node.kg.qq.com/play?s=q2wpU-qtdz4xvq1Z&lang=zh_Hans");
 		});
+
+
 
 
 
@@ -96,15 +132,45 @@ $(document).ready(
 			.attr('style','opacity:.8;background-color:black;display:flex');
 			$("#mv-container")
 			.attr('style','display:flex');
-			$("#mvideo-demo5")
+			$("#mvideo")
 			.attr('style','display:block;');
-			$("#mvideo-demo5")
+			$("#mvideo")
 			.attr('src','https://www.youtube.com/embed/M-pMD4SpKYE');
+			$("#mv-tip-mainland-demo1")
+			.attr('style','display:none;');
+			$("#mv-tip-mainland-demo5")
+			.attr('style','z-index:3100;');
+		});
+		$("#mv-tip-mainland-demo5").on('click',function(){
+			$("#mvideo")
+			.attr('src','https://player.bilibili.com/player.html?aid=30236455&cid=52734996&page=1');
+		});
+		$("#mv-othersource-demo5").on('click',function(){
+			$("#mv-container-bg-control")
+			.attr('style','opacity:.8;background-color:black;display:flex');
+			$("#mv-container")
+			.attr('style','display:flex');
+			$("#mvideo")
+			.attr('style','display:block;');
+			$("#mvideo")
+			.attr('src','https://player.bilibili.com/player.html?aid=30236455&cid=52734996&page=1');
 		});
 		$("#ed-demo5").on('click',function(){
 		window.open("https://node.kg.qq.com/play?s=CYz_KJCbejh9GCjN&lang=zh_Hans");
 		});
 
+
+
+
+		$("#save-demo6").on('click',function(){
+			var $form = $('<form method="GET"></form>');
+			$form.attr('action', './audio/shanyoumuxi.mp3');
+			$form.appendTo($('body'));
+			$form.submit();
+		});
+		$("#ed-demo6").on('click',function(){
+		window.open("");
+		});
 
 
 

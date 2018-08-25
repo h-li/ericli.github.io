@@ -56,3 +56,14 @@
 		demo5.load();
 		$(".album").removeClass("album-playing");
 	}
+	function playDemo6() {
+		var demo6 = document.getElementById("demo6");
+		demo6.play();
+		$("#demo-6").addClass("album-playing");
+	}
+	function stopDemo6() {
+		var demo6 = document.getElementById("demo6");
+		demo6.pause();
+		demo6.load();
+		$(".album").removeClass("album-playing");
+	}
