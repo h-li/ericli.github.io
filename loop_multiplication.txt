@@ -1,0 +1,37 @@
+﻿			Input
+			Store A
+        	Input
+			Store B
+        
+IsAZero,	Skipcond 400
+        	Jump IsPosA / else
+        	Jump PrintRes
+		
+IsPosA,		Skipcond 800
+			Jump Loop2
+        	Jump Loop1
+
+Loop1,		Load Result
+			Add B
+        	Store Result
+			Load A
+        	Subt Counter
+			Store A
+        	Jump IsAZero
+
+Loop2,		Load Result
+			Subt B
+        	Store Result
+			Load A
+        	Add Counter
+			Store A
+        	Jump IsAZero
+        
+PrintRes,	Load Result
+			Output
+			Halt
+
+A,			DEC 0
+B,			DEC 0
+Result,		DEC 0
+Counter,	DEC 1
